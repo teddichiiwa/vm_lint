@@ -21,14 +21,15 @@ analyzer:
     exhaustive_cases: error
     # PEDANTIC FORCE ERROR
     always_declare_return_types: error
-    type_annotate_public_apis: error
     annotate_overrides: error
     avoid_empty_else: error
     avoid_null_checks_in_equality_operators: error
+    avoid_print: error
     avoid_relative_lib_imports: error
     avoid_return_types_on_setters: error
     avoid_shadowing_type_parameters: error
     avoid_types_as_parameter_names: error
+    avoid_web_libraries_in_flutter: error
     camel_case_extensions: error
     curly_braces_in_flow_control_structures: error
     prefer_single_quotes: error
@@ -38,6 +39,7 @@ analyzer:
     library_prefixes: error
     no_duplicate_case_values: error
     null_closures: error
+    no_logic_in_create_state: error
     prefer_collection_literals: error
     prefer_conditional_assignment: error
     prefer_contains: error
@@ -133,7 +135,7 @@ linter:
     # Can usually be replaced with an extension
     # pedantic: disabled
     # http://dart-lang.github.io/linter/lints/avoid_classes_with_only_static_members.html
-    - avoid_classes_with_only_static_members
+    # - avoid_classes_with_only_static_members
 
     # Only useful when targeting JS
     # pedantic: disabled
@@ -947,3 +949,4 @@ linter:
     # Dart SDK: >= 2.8.0-dev.1.0 • (Linter v0.1.108)
     # https://dart-lang.github.io/linter/lints/use_key_in_widget_constructors.html
     - use_key_in_widget_constructors
+    - use_build_context_synchronously

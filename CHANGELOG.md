@@ -1,3 +1,5 @@
-## 0.0.1
+# Changelog
 
-* TODO: Describe initial release.
+## 1.1.1
+
+* FEAT: Update new rules
