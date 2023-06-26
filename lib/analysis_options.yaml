@@ -17,10 +17,11 @@ analyzer:
     # short child properties last
     sort_child_properties_last: error
     # CUSTOM
-    public_member_api_docs: error
+    # public_member_api_docs: error
     exhaustive_cases: error
     # PEDANTIC FORCE ERROR
     always_declare_return_types: error
+    type_annotate_public_apis: error
     annotate_overrides: error
     avoid_empty_else: error
     avoid_null_checks_in_equality_operators: error
@@ -943,7 +944,7 @@ linter:
     # Too strict. Implementing all exported public APIs (`package_api_docs`) is enough.
     # Dart SDK: >= 2.0.0 • (Linter v0.1.11)
     # https://dart-lang.github.io/linter/lints/public_member_api_docs.html
-    - public_member_api_docs
+    # - public_member_api_docs
 
     # Adding a key without using it isn't helpful in applications, only for the Flutter SDK
     # Dart SDK: >= 2.8.0-dev.1.0 • (Linter v0.1.108)
