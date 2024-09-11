@@ -8,6 +8,8 @@ analyzer:
     # https://github.com/dart-lang/sdk/issues/31410#issuecomment-510683629
     implicit-casts: false
   errors:
+    # the use of visible for testing member is forbidden
+    invalid_use_of_visible_for_testing_member: error
     # treat missing required parameters as a warning (not a hint)
     missing_required_param: error
     # treat missing returns as a warning (not a hint)
